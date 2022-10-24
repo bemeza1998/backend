@@ -41,7 +41,7 @@ public class MongoConfig extends AbstractMongoClientConfiguration {
               + appValues.getMongoHost()
               + "/"
               + appValues.getMongoDB()
-              + "?ssl=true&authSource=admin&retryWrites=true&w=majority");
+              + "&readPreference=primaryPreferred?ssl=true&authSource=admin&retryWrites=true&w=majority");
     }
 
     return MongoClients.create(
