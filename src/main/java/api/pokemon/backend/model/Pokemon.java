@@ -1,7 +1,6 @@
 package api.pokemon.backend.model;
 
 import java.util.List;
-import javax.validation.constraints.NotNull;
 import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.TypeAlias;
@@ -14,10 +13,10 @@ public class Pokemon {
 
   @Id private String id;
 
-  @NotNull(message = "El nombre es obligatorio")
+  // @NotNull(message = "El nombre es obligatorio")
   private String nombre;
 
-  @NotNull(message = "La descripcion es obligatoria")
+  // @NotNull(message = "La descripcion es obligatoria")
   private String descripcion;
 
   private String tipo;
